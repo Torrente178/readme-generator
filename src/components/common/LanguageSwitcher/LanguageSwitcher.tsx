@@ -11,6 +11,9 @@ export const languageSupports = [
   {
     label: 'English',
     route: 'en',
+    
+    label: 'Tortuliano',
+    route: 'to',
   },
 ]
 export interface ILanguageSwitcherProps {}
