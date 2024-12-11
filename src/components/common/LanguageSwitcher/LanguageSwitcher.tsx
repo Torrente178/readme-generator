@@ -9,8 +9,8 @@ import NextLink from 'next/link'
 
 export const languageSupports = [
   {
-    label: 'ingles', 'español',
-    route: 'en', 'es',
+    label: 'ingles',
+    route: 'en',
   },
 ]
 export interface ILanguageSwitcherProps {}
