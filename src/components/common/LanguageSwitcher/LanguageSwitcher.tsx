@@ -13,7 +13,7 @@ export const languageSupports = [
     route: 'en',
   },
    {
-    label: 'ingles',
+    label: 'español',
     route: 'es',
   },
 ]
