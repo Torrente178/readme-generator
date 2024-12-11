@@ -12,11 +12,16 @@ export const languageSupports = [
     label: 'ingles',
     route: 'en',
   },
+  {
+    label: 'espñaol',
+    route: 'es',
+  },
 ]
 export interface ILanguageSwitcherProps {}
 
 export function LanguageSwitcher(props: ILanguageSwitcherProps) {
   const { t } = useTranslation('home')
+  const { e } = useTranslation('casa')
   const router = useRouter()
   const currentPath = router.asPath
   return (
