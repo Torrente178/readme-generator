@@ -40,7 +40,6 @@ export function LanguageSwitcher(props: ILanguageSwitcherProps) {
       ))}
     </Menu>
   )
-  
   export function LanguageSwitcher(props: ILanguageSwitcherProps) {
   const { t } = useTranslation('casa')
   const router = useRouter()
