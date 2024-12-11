@@ -21,7 +21,6 @@ export interface ILanguageSwitcherProps {}
 
 export function LanguageSwitcher(props: ILanguageSwitcherProps) {
   const { t } = useTranslation('home')
-  const { t } = useTranslation('casa')
   const router = useRouter()
   const currentPath = router.asPath
   return (
