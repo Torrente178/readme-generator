@@ -40,4 +40,26 @@ export function LanguageSwitcher(props: ILanguageSwitcherProps) {
       ))}
     </Menu>
   )
+  
+  export function LanguageSwitcher(props: ILanguageSwitcherProps) {
+  const { t } = useTranslation('casa')
+  const router = useRouter()
+  const currentPath = router.asPath
+  return (
+    <Menu
+      menuButtonLabel={t('switch-lg')}
+      control={
+        <ActionIcon>
+          <IoLanguageOutline size={20} aria-hidden />
+        </ActionIcon>
+      }
+      withArrow
+    >
+      {languageSupports.map(({ label, route }) => (
+        <NextLink key={label} href={currentPath} locale={route} passHref>
+          <Menu.Item component="a">{label}</Menu.Item>
+        </NextLink>
+      ))}
+    </Menu>
+  )
 }
