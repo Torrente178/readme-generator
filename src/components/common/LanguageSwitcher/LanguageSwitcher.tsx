@@ -9,7 +9,7 @@ import NextLink from 'next/link'
 
 export const languageSupports = [
   {
-    label: 'English',
+    label: 'ingles',
     route: 'en',
     
     label: 'Tortuliano',
