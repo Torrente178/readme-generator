@@ -12,11 +12,8 @@ export const languageSupports = [
     label: 'ingles',
     route: 'en',
   },
-]
-
-export const languageSupports = [
-  {
-    label: 'prueba',
+   {
+    label: 'ingles',
     route: 'es',
   },
 ]
