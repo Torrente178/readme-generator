@@ -37,33 +37,3 @@ export function LanguageSwitcher(props: ILanguageSwitcherProps) {
     </Menu>
   )
 }
-export const languageSupports = [
-  {
-    label: 'español',
-    route: 'es',
-  },
-]
-export interface ILanguageSwitcherProps {}
-
-export function LanguageSwitcher(props: ILanguageSwitcherProps) {
-  const { t } = useTranslation('casa')
-  const router = useRouter()
-  const currentPath = router.asPath
-  return (
-    <Menu
-      menuButtonLabel={t('switch-language')}
-      control={
-        <ActionIcon>
-          <IoLanguageOutline size={20} aria-hidden />
-        </ActionIcon>
-      }
-      withArrow
-    >
-      {languageSupports.map(({ label, route }) => (
-        <NextLink key={label} href={currentPath} locale={route} passHref>
-          <Menu.Item component="a">{label}</Menu.Item>
-        </NextLink>
-      ))}
-    </Menu>
-  )
-}
