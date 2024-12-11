@@ -13,6 +13,13 @@ export const languageSupports = [
     route: 'en',
   },
 ]
+
+export const languageSupports = [
+  {
+    label: 'prueba',
+    route: 'es',
+  },
+]
 export interface ILanguageSwitcherProps {}
 
 export function LanguageSwitcher(props: ILanguageSwitcherProps) {
